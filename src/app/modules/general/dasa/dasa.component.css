@@ -1,0 +1,98 @@
+#card{
+    margin-left: 4vw;
+    width: 30%;
+    height: 40%;
+    overflow: auto;
+    margin-top: 5vh;
+    text-decoration: solid;
+    font-size: 1.8vw;
+    padding: 2vw 2vw 0px 2vw;
+    background-color: rgba(155, 243, 155, 0.74);
+  }
+  .header {
+    width: 50%;
+    height: 60%;
+    margin: 0px 0px 0px 20vw;
+  }
+  img {
+    padding-left: 15vw;
+    padding-top: 2vh;
+    width: 30vw;
+  }
+  #card-header{
+      border-color: red;
+      text-align: center;
+  }
+  #form-check {
+      margin: 10% 0% 0% 0%;
+  }
+  .form-check-input:hover {
+    box-shadow: 1px 1px 0px 0px white;
+  }
+  button {
+      background-color: rgb(247, 234, 234);
+      margin: 5% 0% 10% 25%;
+      width: 60%;
+      font-size: 1.8vw;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 300;
+      color: black;
+  }
+  @media screen and (max-width: 800px){
+    button {
+      background-color: rgb(247, 234, 234);
+      margin: 5% 0% 10% 25%;
+      width: 60%;
+      font-size: 2.5vw;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 300;
+      color: black;
+  }
+    #card{
+      margin-left: 4vw;
+      width: 30%;
+      height: 35%;
+      overflow: auto;
+      margin-top: 3vh;
+      text-decoration: solid;
+      font-size: 2.5vw;
+      padding: 2vw 2vw 0px 2vw;
+      background-color: rgba(155, 243, 155, 0.74);
+    }
+    img {
+      padding-left: 17vw;
+      padding-top: 5vh;
+      width: 40vw;
+    }
+  }
+  @media screen and (max-height: 250px) {
+    #card {
+      margin-top: 15%;
+    }
+  }
+  img {
+      animation-duration: 3s;
+      animation-name: slidein;
+    }
+    
+    @keyframes slidein {
+      from {
+        padding-left: 0vw;
+      }
+      to {
+        padding-left: 8vw;
+      }
+    }
+  #card {
+      animation-duration: 3s;
+      animation-name: slidein2;
+    }
+    
+    @keyframes slidein2 {
+      from {
+        margin-left: 100%;
+      }
+      to {
+        margin-left: 4vw;
+      }
+    }
