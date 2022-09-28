@@ -6,19 +6,23 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './modules/general/home/home.component';
-import { AcceuilComponent } from './modules/general/acceuil/acceuil.component';
+import { HomeComponent, HOMEComponent } from './modules/general/home/home.component';
+import { AcceuilComponent, ACCEUILComponent } from './modules/general/acceuil/acceuil.component';
 import { QRCodeModule } from 'angular2-qrcode';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HomeComponent2 } from './modules/application/home/home.component';
+import { DASAComponent } from './modules/general/dasa/dasa.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HomeComponent2,
-    AcceuilComponent
+    AcceuilComponent,
+    HOMEComponent,
+    ACCEUILComponent,
+    DASAComponent
   ],
   imports: [
     BrowserModule,
