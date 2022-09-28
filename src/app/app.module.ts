@@ -7,21 +7,23 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './modules/general/home/home.component';
-import { PrincipalComponent } from './modules/general/principal/principal.component';
 import { AcceuilComponent } from './modules/general/acceuil/acceuil.component';
 import { QRCodeModule } from 'angular2-qrcode';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HomeComponent2 } from './modules/application/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PrincipalComponent,
+    HomeComponent2,
     AcceuilComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     QRCodeModule, FormsModule,
     TranslateModule.forRoot({ loader: {
       provide: TranslateLoader,
