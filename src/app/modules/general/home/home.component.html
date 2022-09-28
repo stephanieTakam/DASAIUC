@@ -1,1 +1,252 @@
-<p>home works!</p>
+<div class="col align-items-start position-absolute ">
+    <img class="row" src="../../../../assets/images/photoIuc.jpg" id="header">
+    <div class="row" id="bodi">
+        <div class="activites">
+            <div id="boutton1">
+                <button type="button" (click)="show1();" class="btn dropdown-toggle" aria-expanded="false" id="dropdownMenuButton">
+                    SPORTING ACTIVITIES
+                </button>
+                <div *ngIf="isShown1" class="menu" id="menu1">
+                    <span>
+                        <div class="row align-items-start">
+                            <div class="col" id="colActivite1">
+                                <ul class="listeSport" *ngFor="let data of detailsSport">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col" id="colActivite2">
+                                <ul class="listeSport" *ngFor="let data of detailsSport; index as i">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col" id="colActivite3">
+                                <ul class="listeSport" *ngFor="let data of detailsSport; index as i">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row" id="rowImage">
+                            <div class="col">
+                                <img src="../../../../assets/images/photo/ELEMENTS DASA-01.png" class="imageSport1">
+                            </div>
+                            <div class="col">
+                                <img src="../../../../assets/images/photo/ELEMENTS DASA-02.png" class="imageSport1">
+                            </div>
+                            <div class="col">
+                                <img src="../../../../assets/images/photo/ELEMENTS DASA-03.png" class="imageSport1">
+                            </div>
+                            <div class="col">
+                                <img src="../../../../assets/images/photo/ELEMENTS DASA-04.png" class="imageSport1">
+                            </div>
+                        </div>        
+                    </span>
+                </div>
+            </div>
+            <div mdbDropdown class="dropdown" id="boutton2">
+                <button type="button" (click)="show2();" mdbDropdownToggle class="btn dropdown-toggle" aria-expanded="false" id="dropdownMenuButton">
+                    CULTURAL ACTIVITIES
+                </button>
+                <div class="menu" id="menu2" *ngIf="isShown2">
+                    <span>
+                        <div class="row align-items-start">
+                            <div class="col" id="colActivite1">
+                                <ul class="listeSport" *ngFor="let data of detailsCulture">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col" id="colActivite2">
+                                <ul class="listeSport" *ngFor="let data of detailsCulture">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col" id="colActivite3">
+                                <ul class="listeSport" *ngFor="let data of detailsCulture">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row" id="rowImage">
+                            <div class="col">
+                                <img src="../../../../assets/images/photo/ELEMENTS DASA-05.png" class="imageSport1">
+                            </div>
+                            <div class="col">
+                                <img src="../../../../assets/images/photo/ELEMENTS DASA-06.png" class="imageSport1">
+                            </div>
+                            <div class="col">
+                                <img src="../../../../assets/images/photo/ELEMENTS DASA-07.png" class="imageSport1">
+                            </div>
+                            <div class="col">
+                               <img src="../../../../assets/images/photo/ELEMENTS DASA-08.png" class="imageSport1">
+                            </div>
+                        </div>        
+                    </span>
+                </div>
+            </div>
+            <div mdbDropdown class="dropdown" id="boutton3">
+                <button type="button" (click)="show3();" mdbDropdownToggle class="btn dropdown-toggle" aria-expanded="false" id="dropdownMenuButton">
+                    ACADEMIC ACTIVITIES
+                </button>
+                <div class="menu" id="menu3" *ngIf="isShown3">
+                    <span>
+                        <div class="row align-items-start" >
+                            <div class="col" id="colActivite1" >
+                                <ul class="listeSport" *ngFor="let data of detailsAcademique">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites1[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col" id="colActivite2">
+                                <ul class="listeSport" *ngFor="let data of detailsAcademique">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites2[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col" id="colActivite3">
+                                <ul class="listeSport" *ngFor="let data of detailsAcademique">
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[0] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[1] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[2] }}</a>
+                                    </li>
+                                    <li ><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=yN--LHwRaUeIAa1uyMqcflhOjMQfhNdKrh22ekeJVRlUQjhMU0JFM1FUOUxSS042Wk8xMkNBTjNIWi4u">
+                                        {{ data.blocActivites3[3] }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="row">
+        <div class="bas">
+        <div class="footer">
+           <a href="https://www.myiuc.com" id="lienMyIuc">
+               www.myiuc.com
+           </a>
+       </div>
+       <div class="vert">
+           <div class="content">
+               <div class="firstSide">
+                   <div>
+                       <div class="logbessou">
+                           <i class="fa fa-whatsapp" style="font-size:20px"></i>
+                           Campus logbessou:694 81 90 26/
+                       </div>
+                       <div class="porte">
+                           Gate AB 005
+                       </div>
+                   </div>
+               </div>
+               <div class="secondSide">
+                   <div>
+                       <div class="akwa">
+                           Campus Akwa:693 02 55 88
+                       </div>
+                       <div class="etage">
+                           3 <sup>rd</sup> floor
+                       </div>
+                   </div>
+               </div>
+               <div class="ligneVerticale"></div>
+               <div class="thirdSide">
+                   <i class="fa fa-facebook-square" style="font-size:20px"></i>
+                  <i class="fa fa-twitter-square" style="font-size:20px"></i>
+                   iucdouala
+               </div>
+           </div>
+       </div>
+        </div>
+    </footer>
+</div>
