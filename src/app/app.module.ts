@@ -6,35 +6,39 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent, HOMEComponent } from './modules/general/home/home.component';
-import { AcceuilComponent, ACCEUILComponent } from './modules/general/acceuil/acceuil.component';
+import { HOMECOMPONENT } from './modules/general/home/home.component';
 import { QRCodeModule } from 'angular2-qrcode';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { HomeComponent2 } from './modules/application/home/home.component';
-import { DASAComponent } from './modules/general/dasa/dasa.component';
+import { DASACOMPONENT } from './modules/general/dasa/dasa.component';
+import { ACCEUILCOMPONENT } from './modules/general/acceuil/acceuil.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    HomeComponent2,
-    AcceuilComponent,
-    HOMEComponent,
-    ACCEUILComponent,
-    DASAComponent
+    HOMECOMPONENT,
+    DASACOMPONENT,
+    ACCEUILCOMPONENT
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     QRCodeModule, FormsModule,
-    TranslateModule.forRoot({ loader: {
-      provide: TranslateLoader,
-      useFactory: httpTranslateLoader,
-      deps: [HttpClient]
-    }}),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
     HttpClientModule
+  ],
+  exports: [
+    AppComponent,
+    ACCEUILCOMPONENT,
+    HOMECOMPONENT,
+    DASACOMPONENT
   ],
   providers: [],
   bootstrap: [AppComponent]
