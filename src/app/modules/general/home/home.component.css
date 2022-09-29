@@ -2,7 +2,7 @@
     background-attachment: fixed;
     background: none;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
 }
 @media screen and (max-width: 800px){
@@ -33,13 +33,13 @@
     .bas {
         display: flex;
         position: absolute;
-        /* align-self: end; */
         bottom: 0;
         width: 100vw;
         height: 10vh;
         top: 90vh;
         padding-top: 0.5%;
         word-spacing: 1px;
+        background-size: cover;
         margin-block-end: 0;
     }
     .vert {
@@ -79,6 +79,9 @@ ul{
 }
 .body {
     color: white;
+}
+footer{
+    width: 100%;
 }
 .menu {
     position: absolute;
@@ -191,7 +194,6 @@ a:visited {
 .bas {
     display: flex;
     position: absolute;
-    /* align-self: end; */
     bottom: 0;
     width: 100%;
     height: 12vh;
@@ -208,7 +210,6 @@ a:visited {
 .content {
     color: white;
     display: flex;
-    /* margin-inline-start: 1%; */
 }
 .ligneVerticale {
     border-left: 2px solid #fff;
@@ -232,7 +233,6 @@ a:visited {
 .etage {
     background-color: white;
     height: auto;
-    
     padding-left: 2%;
     width: 50%;
     color: black;

@@ -1,6 +1,7 @@
 {
   "name": "dasa-iuc",
   "version": "0.0.0",
+  "homepage": "https://dasaiuc.000webhostapp.com",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
