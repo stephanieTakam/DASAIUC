@@ -16,7 +16,7 @@ html, body{
 }
 #root{
     display: block;
-    background-image: url("./assets/images/institut-universitaire-de-la-cote-iuc.jpg"), linear-gradient(rgba(15, 15, 15, 0.788), rgba(10, 10, 10, 0.644));
+    background: linear-gradient(rgba(15, 15, 15, 0.788), rgba(10, 10, 10, 0.644));
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
