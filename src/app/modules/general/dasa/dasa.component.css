@@ -78,7 +78,34 @@
     #card{
       margin-left: 4vw;
       width: 30%;
-      height: 30%;
+      height: 25%;
+      overflow: auto;
+      margin-top: 5vh;
+      text-decoration: solid;
+      font-size: 3vw;
+      padding: 2vw 2vw 0px 2vw;
+      background-color: rgba(155, 243, 155, 0.74);
+    }
+    img {
+      padding-left: 16vw;
+      padding-top: 7vh;
+      width: 50vw;
+    }
+  }
+  @media screen and (max-width: 500px){
+    button {
+      background-color: rgb(247, 234, 234);
+      margin: 5% 0% 10% 25%;
+      width: 60%;
+      font-size: 2.6vw;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 300;
+      color: black;
+  }
+    #card{
+      margin-left: 4vw;
+      width: 30%;
+      height: 27%;
       overflow: auto;
       margin-top: 4vh;
       text-decoration: solid;
@@ -107,7 +134,7 @@
         padding-left: 0vw;
       }
       to {
-        padding-left: 8vw;
+        padding-left: 16vw;
       }
     }
   #card {

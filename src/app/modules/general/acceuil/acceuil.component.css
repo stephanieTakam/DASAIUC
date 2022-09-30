@@ -2,7 +2,7 @@
     background-attachment: fixed;
     background: none;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
 }
 @media screen and (max-width: 800px){
@@ -12,7 +12,66 @@
 }
 @media screen and (max-width: 300px){
     #header {
-        height: 30vh;
+        height: 25vh;
+    }
+    button {
+        color: white;
+        font-size: 1.8vw;
+    }
+    i {
+        padding-left: 0.3vw;
+        font-size: 1.2vw;
+    }
+    .menu {
+        height: 24vh;
+        font-size: 1.7vw;
+    }
+    .imageSport1, .imageSport2, .imageSport3, .imageSport4 {
+        width: 10vw;
+        height: 8vh;
+    }
+    .bas {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 8vh;
+        top: 90vh;
+        padding-top: 0.5%;
+        word-spacing: 1px;
+        background-size: cover;
+        margin-block-end: 0;
+    }
+    .vert {
+        background-color: green;
+        width: 100%;
+        font-size: 1.4vw;
+    }
+    .content {
+        color: white;}
+    .ligneVerticale {
+        border-left: 2px solid #fff;
+        border-radius: 1px;
+        display: inline-block;
+        height: 4vh;
+        margin-top: 1.1%;
+        margin-bottom: 0.5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .porte {
+        background-color: white;
+        height: auto;
+        width: 40%;
+        color: black;
+        font-size: 1.5vw;
+        margin-left: 8%;
+        padding-left: 2%;
+    }
+}
+@media screen and (max-width: 500px){
+    #header {
+        height: 28vh;
     }
     button {
         color: white;
@@ -23,23 +82,23 @@
         font-size: 1.3vw;
     }
     .menu {
-        height: 26vh;
-        font-size: 1.7vw;
+        height: 25vh;
+        font-size: 1.5vw;
     }
     .imageSport1, .imageSport2, .imageSport3, .imageSport4 {
-        width: 10vw;
-        height: 8vh;
+        width: 8vw;
+        height: 6vh;
     }
     .bas {
         display: flex;
         position: absolute;
-        /* align-self: end; */
         bottom: 0;
-        width: 100vw;
-        height: 10vh;
-        top: 90vh;
+        width: 100%;
+        height: 8vh;
+        top: 85vh;
         padding-top: 0.5%;
         word-spacing: 1px;
+        background-size: cover;
         margin-block-end: 0;
     }
     .vert {
@@ -79,6 +138,9 @@ ul{
 }
 .body {
     color: white;
+}
+footer{
+    width: 100%;
 }
 .menu {
     position: absolute;
@@ -191,7 +253,6 @@ a:visited {
 .bas {
     display: flex;
     position: absolute;
-    /* align-self: end; */
     bottom: 0;
     width: 100%;
     height: 12vh;
@@ -208,7 +269,6 @@ a:visited {
 .content {
     color: white;
     display: flex;
-    /* margin-inline-start: 1%; */
 }
 .ligneVerticale {
     border-left: 2px solid #fff;
@@ -232,7 +292,6 @@ a:visited {
 .etage {
     background-color: white;
     height: auto;
-    
     padding-left: 2%;
     width: 50%;
     color: black;
